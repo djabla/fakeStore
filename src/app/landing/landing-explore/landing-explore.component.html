@@ -1,0 +1,26 @@
+<body>
+    <h2 class="explore-title">Explore Everything</h2>
+    <p-carousel [value]="categories" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template  let-category pTemplate="item">
+            <article class="category-card">
+                <figure class="card__image-holder">
+                    <img class="card__image" [src]="category.image">
+                </figure>
+                <div class="card__contents">
+                    <p class="card__title">{{category.name}}</p>
+                </div>
+            </article>
+        </ng-template>
+    </p-carousel>
+    <section class="pc-category">
+        <article class="pc-category__card" *ngFor="let category of categories">
+            <figure class="pc-card__image-holder">
+                <img [src]="category.image" class="pc-card__image">
+            </figure>
+            <p class="pc-card__title">
+                {{category.name}}
+            </p>
+        </article>
+    </section>
+</body>
