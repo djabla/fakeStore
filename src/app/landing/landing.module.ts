@@ -5,12 +5,14 @@ import { LandingRoutingModule } from './landing-routing.module';
 import { LandingMainComponent } from './landing-main/landing-main.component';
 import { PrimeNGImportsModule } from '../module-imports/prime-ng-imports/prime-ng-imports.module';
 import { LandingExploreComponent } from './landing-explore/landing-explore.component';
+import { LandingAccordionComponent } from './landing-accordion/landing-accordion.component';
 
 
 @NgModule({
   declarations: [
     LandingMainComponent,
-    LandingExploreComponent
+    LandingExploreComponent,
+    LandingAccordionComponent
   ],
   imports: [
     CommonModule,

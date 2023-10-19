@@ -1,6 +1,6 @@
-body{
+section{
     padding: 1rem;
-    height: 60vh;
+    background-color: whitesmoke;
     .explore-title{
         width: 100%;
         text-align: center;
@@ -48,6 +48,7 @@ body{
             gap: 1.3rem;
             padding-left: 3rem;
             padding-right: 3rem;
+            margin-bottom: 3rem;
             .pc-category__card{
                 display: flex;
                 flex-direction: column;
