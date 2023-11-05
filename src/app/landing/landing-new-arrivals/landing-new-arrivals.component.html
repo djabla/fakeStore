@@ -1,0 +1,21 @@
+<section>
+    <h2 class="new-title">New Arrivals</h2>
+    <p class="new-desc">Explore our shop's new and upcoming products</p>
+    <p-carousel [value]="productList" [numVisible]="2" [numScroll]="1" [circular]="true" >
+        <ng-template let-product pTemplate="item">
+            <article class="product-card">
+                <figure class="card__image-holder">
+                    <img class="card__image" [src]="product.image">
+                </figure>
+                <div class="card__contents">
+                    <p class="card__title">Title</p>
+                    <div class="card__ratings">
+
+                    </div>
+                    <p class="card__desc">A description msg</p>
+                    <p class="card__price">${{product.price}}</p>
+                </div>
+            </article>
+        </ng-template>
+    </p-carousel>
+</section>
